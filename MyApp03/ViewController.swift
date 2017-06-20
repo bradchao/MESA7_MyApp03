@@ -10,9 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textInput: UITextField!
+    @IBOutlet weak var labelResult: UILabel!
+    @IBOutlet weak var textHistory: UITextView!
+    
+    private var stringAnswer:String?
+    
+    @IBAction func clickGuess(_ sender: Any) {
+        let stringInput = textInput.text!
+        
+        let stringResult = BradAPI.checkAB(answer: stringAnswer!,
+                                           guess:stringInput)
+        labelResult.text = stringResult
+        
+        textHistory.text.append("\(stringInput) => \(stringResult)\n")
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        stringAnswer = BradAPI.createAnswer()
+        //print(stringAnswer!)
+        
     }
 
     override func didReceiveMemoryWarning() {
