@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textInput: UITextField!
     @IBOutlet weak var labelResult: UILabel!
@@ -30,9 +30,11 @@ class ViewController: UIViewController {
         
         if stringResult == "3A0B" {
             showWinnerDialog()
-        }else if counter == 10 {
+        }else if counter == 3 {
             showLoserDialog()
         }
+        
+        textInput.resignFirstResponder()
         
     }
 
@@ -41,24 +43,50 @@ class ViewController: UIViewController {
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
             (action: UIAlertAction) -> Void in
-            print("OK")
+            self.initRound()
         })
         
         alert.addAction(okAction)
         
+        // 以前是 presentViewController(...)
         self.present(alert, animated: true, completion: nil)
         
     }
     
     func showLoserDialog() {
+        let alert:UIAlertController = UIAlertController(title: "遊戲結果", message: "很遺憾\n答案是:\(stringAnswer!)", preferredStyle: UIAlertControllerStyle.alert)
         
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
+            (action: UIAlertAction) -> Void in
+            self.initRound()
+        })
+        
+        alert.addAction(okAction)
+        
+        // 以前是 presentViewController(...)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func initRound() {
+        textInput.text = ""
+        labelResult.text = "顯示結果"
+        textHistory.text = ""
+        stringAnswer = BradAPI.createAnswer(3)
+        counter = 0
+        textInput.resignFirstResponder()
+        
+    }
+    
+    // // called when 'return' key pressed. return NO to ignore.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        clickGuess(self)
+        return true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        stringAnswer = BradAPI.createAnswer(3)
-        //print(stringAnswer!)
+        textInput.delegate = self
+        initRound()
         
     }
 

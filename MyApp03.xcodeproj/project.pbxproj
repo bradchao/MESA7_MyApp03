@@ -13,6 +13,8 @@
 		296B62DC1EF8C3CF001A0A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296B62DB1EF8C3CF001A0A9D /* Assets.xcassets */; };
 		296B62DF1EF8C3CF001A0A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296B62DD1EF8C3CF001A0A9D /* LaunchScreen.storyboard */; };
 		296B62E91EF8EB0B001A0A9D /* BradAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296B62E81EF8EB0B001A0A9D /* BradAPI.swift */; };
+		296B630F1EF904FA001A0A9D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296B630E1EF904FA001A0A9D /* WelcomeViewController.swift */; };
+		296B63121EF90659001A0A9D /* welcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296B63111EF90659001A0A9D /* welcome.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		296B62DE1EF8C3CF001A0A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		296B62E01EF8C3CF001A0A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		296B62E81EF8EB0B001A0A9D /* BradAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BradAPI.swift; sourceTree = "<group>"; };
+		296B630E1EF904FA001A0A9D /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		296B63111EF90659001A0A9D /* welcome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		296B62D31EF8C3CF001A0A9D /* MyApp03 */ = {
 			isa = PBXGroup;
 			children = (
+				296B63101EF90646001A0A9D /* imgs */,
 				296B62E81EF8EB0B001A0A9D /* BradAPI.swift */,
 				296B62D41EF8C3CF001A0A9D /* AppDelegate.swift */,
 				296B62D61EF8C3CF001A0A9D /* ViewController.swift */,
@@ -63,8 +68,17 @@
 				296B62DB1EF8C3CF001A0A9D /* Assets.xcassets */,
 				296B62DD1EF8C3CF001A0A9D /* LaunchScreen.storyboard */,
 				296B62E01EF8C3CF001A0A9D /* Info.plist */,
+				296B630E1EF904FA001A0A9D /* WelcomeViewController.swift */,
 			);
 			path = MyApp03;
+			sourceTree = "<group>";
+		};
+		296B63101EF90646001A0A9D /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				296B63111EF90659001A0A9D /* welcome.jpg */,
+			);
+			name = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +143,7 @@
 			files = (
 				296B62DF1EF8C3CF001A0A9D /* LaunchScreen.storyboard in Resources */,
 				296B62DC1EF8C3CF001A0A9D /* Assets.xcassets in Resources */,
+				296B63121EF90659001A0A9D /* welcome.jpg in Resources */,
 				296B62DA1EF8C3CF001A0A9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				296B62D71EF8C3CF001A0A9D /* ViewController.swift in Sources */,
+				296B630F1EF904FA001A0A9D /* WelcomeViewController.swift in Sources */,
 				296B62D51EF8C3CF001A0A9D /* AppDelegate.swift in Sources */,
 				296B62E91EF8EB0B001A0A9D /* BradAPI.swift in Sources */,
 			);
