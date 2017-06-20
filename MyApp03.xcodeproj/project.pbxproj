@@ -12,7 +12,7 @@
 		296B62DA1EF8C3CF001A0A9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296B62D81EF8C3CF001A0A9D /* Main.storyboard */; };
 		296B62DC1EF8C3CF001A0A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296B62DB1EF8C3CF001A0A9D /* Assets.xcassets */; };
 		296B62DF1EF8C3CF001A0A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296B62DD1EF8C3CF001A0A9D /* LaunchScreen.storyboard */; };
-		296B62E71EF8D23F001A0A9D /* BradAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296B62E61EF8D23F001A0A9D /* BradAPI.swift */; };
+		296B62E91EF8EB0B001A0A9D /* BradAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296B62E81EF8EB0B001A0A9D /* BradAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		296B62DB1EF8C3CF001A0A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		296B62DE1EF8C3CF001A0A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		296B62E01EF8C3CF001A0A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		296B62E61EF8D23F001A0A9D /* BradAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BradAPI.swift; sourceTree = "<group>"; };
+		296B62E81EF8EB0B001A0A9D /* BradAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BradAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +56,13 @@
 		296B62D31EF8C3CF001A0A9D /* MyApp03 */ = {
 			isa = PBXGroup;
 			children = (
+				296B62E81EF8EB0B001A0A9D /* BradAPI.swift */,
 				296B62D41EF8C3CF001A0A9D /* AppDelegate.swift */,
 				296B62D61EF8C3CF001A0A9D /* ViewController.swift */,
 				296B62D81EF8C3CF001A0A9D /* Main.storyboard */,
 				296B62DB1EF8C3CF001A0A9D /* Assets.xcassets */,
 				296B62DD1EF8C3CF001A0A9D /* LaunchScreen.storyboard */,
 				296B62E01EF8C3CF001A0A9D /* Info.plist */,
-				296B62E61EF8D23F001A0A9D /* BradAPI.swift */,
 			);
 			path = MyApp03;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			files = (
 				296B62D71EF8C3CF001A0A9D /* ViewController.swift in Sources */,
 				296B62D51EF8C3CF001A0A9D /* AppDelegate.swift in Sources */,
-				296B62E71EF8D23F001A0A9D /* BradAPI.swift in Sources */,
+				296B62E91EF8EB0B001A0A9D /* BradAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
